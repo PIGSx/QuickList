@@ -1,0 +1,74 @@
+@import "var.css";
+
+body{
+    margin-top: 10%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#input-task, #btn-task {
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+#btn-task {
+    background-color: var(--color-dark2);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-task:hover {
+    background-color: var(--color-dark);
+}
+
+#to-do-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#to-do-list li{
+    list-style-type: none;
+    font-size: 1.4rem; 
+    display: flex;
+    justify-content: space-around;
+}
+#input-task {
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+#btn-ok{
+    border: none;
+    background-color: green;
+    color: var(--color-white);
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-ok:hover{
+    background-color: rgb(55, 168, 55);
+}
