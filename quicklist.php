@@ -1,14 +1,12 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickList</title>
-    <link rel="stylesheet" href="css/list.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/quicklist.css">
 </head>
-
 <body>
-    <h1>our list | NAME</h1>
+<h1>our list | NAME</h1>
     <div class="content">
         <div class="content-item">
             <input type="text" id="input-task" placeholder="enter your task">
@@ -20,11 +18,9 @@
         </div>
         <div class="content-list">
             <ul id="to-do-list">
-                <li><button>ok</button></li>
+                <li></li>
             </ul>
         </div>
     </div>
 </body>
-<script src="js/script.js"></script>
-
 </html>
