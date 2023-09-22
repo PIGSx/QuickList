@@ -20,7 +20,7 @@
         </div>
         <div class="content-list">
             <ul id="to-do-list">
-                <li><button>ok</button></li>
+                <li><button></button></li>
             </ul>
         </div>
     </div>
