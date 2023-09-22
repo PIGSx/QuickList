@@ -1,12 +1,23 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
     <link rel="stylesheet" href="css/quicklist.css">
 </head>
+
 <body>
-<h1>our list | NAME</h1>
+    <?php
+    require('connect.php');
+    session_start();
+
+    if ($_SESSION['login'] == true && $_SESSION['tipo'] == 1) {
+        $perfis = mysqli_query($con, "SELECT * FROM `tb_users` WHERE `tb_users`.`cod` = '{$_SESSION['cod']}'");
+    }
+    $perfil = mysqli_fetch_array($perfis);
+    echo "<h1>our list | $perfil[nome]</h1>";
+    ?>
     <div class="content">
         <div class="content-item">
             <input type="text" id="input-task" placeholder="enter your task">
@@ -18,9 +29,11 @@
         </div>
         <div class="content-list">
             <ul id="to-do-list">
-                <li></li>
+                <li><button></button></li>
             </ul>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
