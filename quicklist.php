@@ -1,3 +1,6 @@
+<?php
+include('menu.php');
+?>
 <html lang="en">
 
 <head>
@@ -18,6 +21,7 @@
     $perfil = mysqli_fetch_array($perfis);
     echo "<h1>our list | $perfil[nome]</h1>";
     ?>
+    <main>
     <div class="content">
         <div class="content-item">
             <input type="text" id="input-task" placeholder="enter your task">
@@ -33,6 +37,7 @@
             </ul>
         </div>
     </div>
+    </main>
     <script src="js/script.js"></script>
 </body>
 
